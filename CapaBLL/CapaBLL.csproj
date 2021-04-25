@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CalculosLib\CalculosLib.csproj" />
+    <ProjectReference Include="..\CapaDAL\CapaDAL.csproj" />
+    <ProjectReference Include="..\ComercialVOUtilidades\ComercialVOUtilidades.csproj" />
+  </ItemGroup>
+
+</Project>
