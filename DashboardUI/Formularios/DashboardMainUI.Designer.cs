@@ -57,19 +57,19 @@
             this.buttonFac = new System.Windows.Forms.Button();
             this.buttonCom = new System.Windows.Forms.Button();
             this.panelData = new System.Windows.Forms.Panel();
-            this.toolTipDashboard = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.documentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.comercialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.crearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.informesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportarComoPDFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.comercialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.perfilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configuraciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manualDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.informesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exportarComoPDFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolTipDashboard = new System.Windows.Forms.ToolTip(this.components);
             this.tLPContenedor.SuspendLayout();
             this.panelTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -521,6 +521,30 @@
             this.documentosToolStripMenuItem.Size = new System.Drawing.Size(130, 29);
             this.documentosToolStripMenuItem.Text = "Documentos";
             // 
+            // abrirToolStripMenuItem
+            // 
+            this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
+            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(268, 34);
+            this.abrirToolStripMenuItem.Text = "Abrir...";
+            // 
+            // crearToolStripMenuItem
+            // 
+            this.crearToolStripMenuItem.Name = "crearToolStripMenuItem";
+            this.crearToolStripMenuItem.Size = new System.Drawing.Size(268, 34);
+            this.crearToolStripMenuItem.Text = "Crear...";
+            // 
+            // informesToolStripMenuItem
+            // 
+            this.informesToolStripMenuItem.Name = "informesToolStripMenuItem";
+            this.informesToolStripMenuItem.Size = new System.Drawing.Size(268, 34);
+            this.informesToolStripMenuItem.Text = "Informes";
+            // 
+            // exportarComoPDFToolStripMenuItem
+            // 
+            this.exportarComoPDFToolStripMenuItem.Name = "exportarComoPDFToolStripMenuItem";
+            this.exportarComoPDFToolStripMenuItem.Size = new System.Drawing.Size(268, 34);
+            this.exportarComoPDFToolStripMenuItem.Text = "Exportar como PDF";
+            // 
             // comercialToolStripMenuItem
             // 
             this.comercialToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -529,22 +553,10 @@
             this.comercialToolStripMenuItem.Size = new System.Drawing.Size(106, 29);
             this.comercialToolStripMenuItem.Text = "Comercial";
             // 
-            // abrirToolStripMenuItem
-            // 
-            this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
-            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.abrirToolStripMenuItem.Text = "Abrir...";
-            // 
-            // crearToolStripMenuItem
-            // 
-            this.crearToolStripMenuItem.Name = "crearToolStripMenuItem";
-            this.crearToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.crearToolStripMenuItem.Text = "Crear...";
-            // 
             // perfilToolStripMenuItem
             // 
             this.perfilToolStripMenuItem.Name = "perfilToolStripMenuItem";
-            this.perfilToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.perfilToolStripMenuItem.Size = new System.Drawing.Size(152, 34);
             this.perfilToolStripMenuItem.Text = "Perfil";
             // 
             // configuraciónToolStripMenuItem
@@ -564,20 +576,8 @@
             // manualDeUsuarioToolStripMenuItem
             // 
             this.manualDeUsuarioToolStripMenuItem.Name = "manualDeUsuarioToolStripMenuItem";
-            this.manualDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.manualDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(262, 34);
             this.manualDeUsuarioToolStripMenuItem.Text = "Manual de Usuario";
-            // 
-            // informesToolStripMenuItem
-            // 
-            this.informesToolStripMenuItem.Name = "informesToolStripMenuItem";
-            this.informesToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.informesToolStripMenuItem.Text = "Informes";
-            // 
-            // exportarComoPDFToolStripMenuItem
-            // 
-            this.exportarComoPDFToolStripMenuItem.Name = "exportarComoPDFToolStripMenuItem";
-            this.exportarComoPDFToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.exportarComoPDFToolStripMenuItem.Text = "Exportar como PDF";
             // 
             // DashboardMainUI
             // 

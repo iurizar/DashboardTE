@@ -8,46 +8,48 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using VentasVOUtilidades;
+using System.Windows.Forms.DataVisualization.Charting;
+using DashboardUI.Formularios;
 
 namespace DashboardUI.ControlUsuario
 {
     public partial class FacturacionUC : UserControl
     {
         private VentasVO[] ventas;
-        private TextBox ventasEmp1;
-        private TextBox ventasEmp2;
-        private Label totalEmp1;
-        private Label totalEmp2;
+        private Chart tabla;
+
         public FacturacionUC(VentasVO[] ventas)
         {
             InitializeComponent();
             this.ventas = ventas;
-            this.ventasEmp1 = textBox1;
-            this.ventasEmp2 = textBox2;
-            this.totalEmp1 = labelNumTotal1;
-            this.totalEmp2 = labelNumTotal2;
+            this.tabla = chartFct;
         }
 
         private void FacturacionUC_Paint(object sender, PaintEventArgs e)
         {
-            foreach(int v in ventas[0].VentasAnuales)
+            List<string> empresas = new List<string>(new string[]{"Empresa 1", "Empresa 2" });
+            List<double[]> ventasTotal = new List<double[]>();
+            for(int i = 0; i< ventas.Length; i++)
             {
-                int miles = v * 1000;
-                ventasEmp1.AppendText(miles + " €\r\n");
+                double[] valueArray = new double[ventas.Length];
+                valueArray[i] = ventas[i].FacturacionTotal;
+                ventasTotal.Add(valueArray);
             }
+            tabla.Series[0].Name = "Empresa 1";
+            Series serie2 = new Series("Empresa 2");
+            tabla.Series.Add(serie2);
+            tabla.Series[0].Points.DataBindXY(empresas, ventasTotal[0]);
+            tabla.Series[1].Points.DataBindXY(empresas, ventasTotal[1]);
+            tabla.Series[0].IsValueShownAsLabel = true;
+            tabla.Series[1].IsValueShownAsLabel = true;
 
-            double facTotal1 = ventas[0].FacturacionTotal * 1000;
-            totalEmp1.Text = facTotal1 + " €";
 
-            foreach (int v in ventas[1].VentasAnuales)
-            {
-                int miles = v * 1000;
-                ventasEmp2.AppendText(miles + " €\r\n");
-            }
+        }
 
-            double facTotal2 = ventas[1].FacturacionTotal * 1000;
-            totalEmp2.Text = facTotal2 + " €";
-
+        private void Detalle_Click(object sender, EventArgs e)
+        {
+            PopupUI detallePopup = new PopupUI(ventas);
+            detallePopup.Show();
         }
     }
 }
