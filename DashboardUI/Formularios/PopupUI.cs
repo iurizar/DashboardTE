@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using VentasVOUtilidades;
 
 namespace DashboardUI.Formularios
-{
+{   
     public partial class PopupUI : Form
     {
         private VentasVO[] ventas;
