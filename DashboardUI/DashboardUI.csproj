@@ -83,6 +83,12 @@
     <Compile Include="Formularios\DashboardMainUI.Designer.cs">
       <DependentUpon>DashboardMainUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\PopupUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\PopupUI.Designer.cs">
+      <DependentUpon>PopupUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ControlUsuario\ComInfoUC.resx">
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\DashboardMainUI.resx">
       <DependentUpon>DashboardMainUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PopupUI.resx">
+      <DependentUpon>PopupUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
