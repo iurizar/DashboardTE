@@ -29,7 +29,8 @@ namespace DashboardUI.Formularios
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelMainPopup = new System.Windows.Forms.Panel();
+            this.helpProviderPopup = new System.Windows.Forms.HelpProvider();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -43,32 +44,30 @@ namespace DashboardUI.Formularios
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.helpProviderPopup = new System.Windows.Forms.HelpProvider();
-            this.panelMainPopup.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panelMainPopup
+            // panel1
             // 
-            this.panelMainPopup.BackColor = System.Drawing.Color.White;
-            this.panelMainPopup.Controls.Add(this.textBox4);
-            this.panelMainPopup.Controls.Add(this.textBox3);
-            this.panelMainPopup.Controls.Add(this.label7);
-            this.panelMainPopup.Controls.Add(this.label6);
-            this.panelMainPopup.Controls.Add(this.label5);
-            this.panelMainPopup.Controls.Add(this.labelNumTotal2);
-            this.panelMainPopup.Controls.Add(this.textBox2);
-            this.panelMainPopup.Controls.Add(this.label4);
-            this.panelMainPopup.Controls.Add(this.labelNumTotal1);
-            this.panelMainPopup.Controls.Add(this.textBox1);
-            this.panelMainPopup.Controls.Add(this.label3);
-            this.panelMainPopup.Controls.Add(this.label2);
-            this.panelMainPopup.Controls.Add(this.label1);
-            this.panelMainPopup.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMainPopup.Location = new System.Drawing.Point(0, 0);
-            this.panelMainPopup.Name = "panelMainPopup";
-            this.panelMainPopup.Size = new System.Drawing.Size(800, 450);
-            this.panelMainPopup.TabIndex = 0;
-            this.panelMainPopup.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMainPopup_Paint);
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.labelNumTotal2);
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.labelNumTotal1);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(800, 450);
+            this.panel1.TabIndex = 0;
             // 
             // textBox4
             // 
@@ -233,15 +232,20 @@ namespace DashboardUI.Formularios
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel1);
             this.Name = "PopupUI";
-            this.helpProviderPopup.SetShowHelp(this, true);
             this.Text = "PopupUI";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.PopupUI_Paint);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private System.Windows.Forms.HelpProvider helpProviderPopup;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label7;
@@ -255,6 +259,6 @@ namespace DashboardUI.Formularios
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.HelpProvider helpProviderPopup;
     }
-}
+
+ }

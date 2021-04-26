@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using VentasVOUtilidades;
 
 namespace DashboardUI.Formularios
-{   
+{
     public partial class PopupUI : Form
     {
         private VentasVO[] ventas;
@@ -46,7 +46,7 @@ namespace DashboardUI.Formularios
             this.helpProviderPopup.SetHelpString(textBox1, "Facturación mensual de la Empresa 2");
         }
 
-        private void panelMainPopup_Paint(object sender, PaintEventArgs e)
+        private void PopupUI_Paint(object sender, PaintEventArgs e)
         {
             foreach (int v in ventas[0].VentasAnuales)
             {
@@ -65,7 +65,6 @@ namespace DashboardUI.Formularios
 
             double facTotal2 = ventas[1].FacturacionTotal * 1000;
             totalEmp2.Text = facTotal2 + " €";
-
         }
     }
 }
