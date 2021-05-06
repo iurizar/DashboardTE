@@ -5,12 +5,12 @@
 
 ## 📑 Tabla de Contenidos
 ---
-- [About](#About)
-  - [Introducción](#Introduccion)
-  - [Menús y Opciones](#Menus-y-opciones)
-  - [Consulta de Datos](#Consulta-de-datos)
-- [Contacto](#Contacto)
-- [Referencias](#Referencias)
+- [About](https://github.com/iurizar/DashboardTE/blob/master/README.md#-about)
+  - [Introducción](https://github.com/iurizar/DashboardTE/blob/master/README.md#introducci%C3%B3n)
+  - [Menús y Opciones](https://github.com/iurizar/DashboardTE/blob/master/README.md#men%C3%BAs-y-opciones)
+  - [Consulta de Datos](https://github.com/iurizar/DashboardTE/blob/master/README.md#men%C3%BAs-y-opciones)
+- [Contacto](https://github.com/iurizar/DashboardTE/blob/master/README.md#men%C3%BAs-y-opciones)
+- [Referencias](https://github.com/iurizar/DashboardTE/blob/master/README.md#men%C3%BAs-y-opciones)
 
 ## ❓ About
 ---
